@@ -16,7 +16,7 @@ public class TestaConta {
         contaCorrente.cliente = cliente;
         contaCorrente.datadeabertura = hoje;
         contaCorrente.limite  = 300;
-        contaCorrente.saldo = 100;
+        contaCorrente.depositar(100); 
         contaCorrente.tipo = "Conta Corrente";
 
         double rendimentoApri1 = contaCorrente.CaucularRendimento( 0.1);
@@ -32,7 +32,7 @@ public class TestaConta {
         contaPoupanca.cliente = cliente;
         contaPoupanca.datadeabertura = hoje;
         contaPoupanca.limite  = 0;
-        contaPoupanca.saldo = 100;
+        contaPoupanca.depositar(100);
         contaPoupanca.tipo = "poupanca"; 
 
         if(contaCorrente == contaPoupanca){

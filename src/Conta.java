@@ -1,5 +1,5 @@
 public class Conta {
-    double saldo;
+    private double saldo;
     String tipo;
     String numero;
     String agencia;
